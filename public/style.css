@@ -1,0 +1,862 @@
+*{
+
+    margin: 0%;
+    
+}
+
+body{
+
+   font-family: 'Plus Jakarta Sans', sans-serif;
+
+display: grid;
+
+grid-template-columns: 1fr;
+
+grid-template-areas: 
+
+" navbar"
+" main"
+"footer";
+
+
+
+  background-color:rgb(248, 248, 245)
+
+}
+
+a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+
+header{
+
+    grid-area: navbar;
+    top: 0;
+    position: sticky;
+
+    background-color:rgb(248, 248, 245);
+
+    z-index: 3;
+}
+
+nav{
+
+ display: flex;
+
+justify-content: space-between;
+
+ padding: 2px 8% 0 7%;
+
+ height: inherit;
+
+  line-height: 80px; 
+
+
+}
+nav #navtabs {
+
+
+display: flex;
+
+align-items: center;
+
+gap: 35px;
+
+
+
+
+}
+
+#navtabs a{
+
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
+   font-size: .9rem;
+   font-weight: 700;
+
+}
+
+ #navlinks{
+
+display: flex;
+
+gap: 20px;
+
+ }
+
+
+aside{
+
+  
+    display: none;
+}
+
+
+main{
+
+
+    grid-area: main;
+}
+
+footer{
+
+grid-area: footer;
+
+}
+
+section{
+
+    min-height: 100dvh;
+}
+
+
+
+/* inner parts of header */
+
+
+
+nav #logo .logo1{
+ 
+ height: 35px;
+ width: 35px;
+
+
+    font-size: 24px;
+    border-radius: 5px ;
+
+   transform: rotate(10deg);
+
+
+  
+    text-align: center;
+}
+
+nav #logo .logo2{
+
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    letter-spacing: -0.025em;
+    
+    color: #1c1917;
+
+ 
+
+}
+
+
+nav div input{
+
+width: 325px;
+height: 28px;
+
+font-size: medium;
+
+border-radius: 25px;
+
+border: none;
+
+padding: 5px;
+
+
+
+  cursor: pointer;
+
+color: rgba(0, 0, 0, 0.63);
+
+ box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+input:focus{
+
+/*outline: none; */
+
+outline-color: rgb(244, 226, 37);
+}
+
+
+header button{
+
+
+
+ 
+
+    border: none;
+   color: rgb(243, 178, 58) ;
+    background-color: rgb(244, 226, 37);
+
+
+    border-radius: 25px;
+
+    padding: 5px 5px;
+
+    cursor: pointer;
+}
+
+
+header button .material-symbols-outlined{
+
+    font-size: 1.3rem;
+
+    color: rgba(7, 7, 7, 0.644)
+    
+
+}
+
+
+
+/* END OF HEADER STYLES */
+
+
+/* MAIN STYLES */
+
+  /*section 1*/
+
+    
+
+     #first{
+
+       display: grid;
+       /*  grid-template-columns: 1fr 1fr;
+         */
+           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+       gap: 20px;
+
+
+      
+     padding: 7% 6%;
+     }
+
+     #first-text{
+
+        display: flex;
+        flex-direction: column;
+     
+         
+   
+        gap: 20px;
+       
+        padding: 13% 0 0 0;
+
+     }
+
+
+    #first button{
+
+    
+        border: none;
+       
+           padding: 2% 5%;
+
+        cursor: pointer;
+
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+
+     }
+
+#img-container{
+
+ 
+
+max-height: 560px;
+max-width: 540px;
+
+text-align: center; /* Centers inline elements (like the <img>) horizontally */
+
+align-content: center; /* Centers the image vertically within the container */
+
+  border-radius: 25px;
+
+ 
+  box-shadow: 5px 0px 200px 8px rgba(243, 145, 65, 0.212); /* Adds a subtle shadow for depth */
+
+
+  padding: 10px; /* Optional: Adds some padding around the image */
+}
+
+#img-container img{
+
+
+  
+ width: 100%; /* 4. Images scale with column width */
+  height: 100%; /* 5. Maintain aspect ratio */
+
+
+    border-radius: 25px;
+
+
+}
+
+
+
+/* section 2 */
+
+
+#second{
+
+
+align-content: center;
+
+
+background-color:rgb(255, 255, 255)
+
+}
+
+#categories{
+
+
+
+display: grid;
+
+gap: 10px;
+
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+
+}
+
+#categories div{
+
+    text-align: center;
+
+
+
+}
+
+
+#categories div span{
+
+
+
+border-radius:200px;
+
+align-content: center;
+
+width: 250px;
+height: 250px;
+
+font-size: clamp(2rem, 3vw, 2.5rem);
+
+margin-bottom: 20px;
+
+}
+
+
+#categories div span:hover{
+
+
+border: 5px solid rgba(191, 201, 206, 0.781);
+
+
+box-shadow: inset 0 0 10px rgba(191, 201, 206, 0.781), 0 0 20px rgba(191, 201, 206, 0.781);
+
+}
+
+#categories div h3{
+
+    
+    color: rgb(61, 65, 68);
+    font-weight: bolder;
+
+}
+
+#categories div:hover h3{
+
+
+
+color: rgb(244, 226, 37);
+}
+
+
+
+
+
+
+/* section 3 */
+
+#three{
+  
+       display: grid;
+
+       grid-template-rows: auto;
+
+       gap: 10px;
+
+}
+
+
+#div-1{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+   margin-top: 30px;
+
+    
+
+    align-content: center;
+
+    padding: 0 1.6% 0 2.8%;
+
+
+}
+
+#div-1 .btn{
+  justify-self: end;
+
+ 
+
+  width: 250px;
+  margin-left: 30px;
+}
+
+#div-2{
+
+   display: grid;
+
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+   gap: 22px;
+
+ align-content: center;
+
+ margin-bottom: 30px;
+
+   
+
+
+           
+   padding: 40px 3%;
+     
+
+}
+
+#div-2 div{
+
+   display:flex;
+   flex-direction: column;
+
+   
+   border-radius: 25px;
+
+   box-shadow: 12px 0px 200px 8px rgba(148, 98, 57, 0.212); /* Adds a subtle shadow for depth */
+
+}
+
+#div-2 div:hover{
+
+    box-shadow: 12px 0px 200px 8px rgba(82, 68, 57, 0.412); /* Adds a subtle shadow for depth */
+
+}
+
+#div-2 div:hover h3{
+
+  color: rgba(2, 2, 2, 0.555);
+
+}
+
+#div-2 div img{
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 25px 25px 0 0;
+
+}
+
+#div-2 div h3{
+
+   font-size: large;
+   font-weight: bolder;
+
+   margin-bottom: 10px;
+   
+
+}
+#div-2 div span{
+
+font-size: 14px;
+font-weight: medium;
+
+margin-left: 20px;
+
+}
+
+#div-2 div p{
+
+
+    
+    font-size: small;
+    font-weight: 600;
+
+    color: rgb(136, 136, 136);
+}
+
+.text-content{
+
+ 
+
+    flex: 1; /* Allow the text container to take up remaining space */
+
+    padding: 10px 0 20px 10px; /* Add some padding for better readability */
+
+}
+
+
+
+/* section 4 */
+
+#four{
+
+    align-content: center; /* Works on standard block elements now! */
+    margin:auto; /* Center the container horizontally */
+    
+
+    padding: 40px;
+}
+
+#four #container{
+  
+    height: 400px;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+
+     place-items: center; /* Centers both ways at once */
+
+
+
+
+    padding: 0 2.8% 40px 2.8%;
+
+    border-radius: 25px;
+
+    background-color: rgb(255, 255, 255);
+
+    position: relative;
+
+       
+}
+
+#div-back{
+
+
+   transform: rotate(10deg);
+
+   border-radius: 25px;
+
+
+   margin-top: 30px;
+    
+
+}
+
+#div-02 #div-back{
+
+ width: 250px;
+  height: 250px;
+
+}
+
+#div-02 #img-div{
+
+background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCI9Ko4dJ92Zq8WxDVugbW9pbOZ3TvHr7m2ozgpTN5VrTJHMnCV5FHdOHWxzDVZ8Ne42B2ECEDdNyzvNcSgptKWbj97xcNyNZG1ttFroB6o5490GgRm4tm9fL3ZkLPH7y9FzTARndLazbdG_vFaZc09UKO3VzhmpATSMQzthRQFd6Mjuxh3ErkZfHZtIqP_OcpqGTlJCJ0aihlzGuZJGzSkA7iuHbd-5oHm3bLfxrUDLEcyyaAUlglVLzV0GCqNv_qYBOrSMaB2atc");
+  
+  /* Mimics 'w-full h-full object-cover' */
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+
+  position:absolute;
+  top: 90px;
+  z-index: 2;
+ 
+   transform: rotate(-10deg);
+   border-radius: 25px;
+
+
+
+}
+
+/* footer styles */
+
+#footer-div-01{
+
+   display: grid;
+
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+
+
+   padding: 40px;
+
+
+}
+
+
+   /*copy of logo code from header for footer*/
+
+
+   #logo .logo1{
+ 
+ height: 35px;
+ width: 35px;
+
+
+    font-size: 24px;
+    border-radius: 5px ;
+
+   transform: rotate(10deg);
+
+
+  
+    text-align: center;
+
+}
+
+ #logo .logo2{
+
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    letter-spacing: -0.025em;
+    
+    color: #1c1917;
+
+}
+
+
+/* end of logo code copy */
+
+
+#footer-div-01 h4{
+
+    margin-bottom: 40px;
+
+    place-self: center; /* Aligns the heading to the center of its grid cell */
+
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+
+}
+
+#footer-div-01 ul{
+
+    list-style: none;
+    
+  place-self: center; /* Aligns the heading to the center of its grid cell */
+   
+
+   margin-bottom: 40px;
+
+}
+
+#footer-div-01 ul li, #footer-div-01 ul a{
+
+    text-decoration: none;
+
+    margin-bottom: 20px;
+
+    color: rgb(136, 136, 136);
+
+}
+
+ #footer-div-01 p{
+
+  
+
+    color: rgb(136, 136, 136);
+
+    place-self: center; /* Aligns the heading to the center of its grid cell */
+
+
+    margin-top: 10px;
+
+
+
+
+ }
+
+#footer-div-02{
+
+   display: flex;
+  justify-content: space-between;
+
+  padding: 30px 40px;
+
+   font-size: small;
+
+   color: rgb(136, 136, 136);
+}
+
+
+#footer-div-02 div{
+
+    display: flex;
+    gap: 20px;
+
+
+   
+
+}
+
+
+/* MEDIA QUERIES */
+
+
+
+@media (max-width : 800px) {
+
+    body{
+
+
+    
+
+      grid-template-columns: 1fr;
+    grid-template-areas: 
+        "navbar"
+        "main"
+        "footer";
+
+     gap: 0%;
+
+    
+
+
+    }
+
+
+
+    aside{
+      
+         grid-area: sidebar;
+
+            top: 80px;
+
+        position: fixed;
+
+
+         
+    
+            height: 100%;
+    
+            width: 150px;
+    
+          
+            
+
+  
+
+   
+      
+}
+   
+body.hide-sidebar {
+    grid-template-columns: 100px 1fr;
+
+     grid-template-areas: 
+
+     "navbar navbar"
+     "sidebar main"
+     "sidebar footer";    
+}
+
+/* Actually hide the element from the page flow */
+body.hide-sidebar aside {
+    display: none;
+}
+    
+
+
+
+    aside div{
+
+
+      margin-top: 30px;
+
+    }
+
+  
+
+    aside div a{
+
+
+
+        display: block;
+        padding: 20px 0;
+
+        text-align: center;
+
+        color: rgb(0, 0, 0);
+
+         font-size: .9rem;
+         font-weight: 700;
+    }
+
+
+
+
+
+
+
+
+
+#navlinks, #navsearch{ 
+
+    display: none;
+
+   }
+
+
+
+
+
+/* section 4 */
+
+
+#four #container{
+
+display: grid;
+
+grid-template-columns: 1fr;
+
+
+
+}
+
+
+
+
+#div-02 #div-back{
+
+    width: 100px;
+    height: 100px;
+
+}
+
+#div-02 #img-div{
+
+    width: 100px;
+    height: 100px;
+
+
+    top: 320px;
+
+
+
+
+}
+
+}
+/*  Bree Daniels */
