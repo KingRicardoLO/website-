@@ -5,8 +5,8 @@
 
 A curated, static e-commerce website featuring sustainable, non-toxic, and eco-friendly toys for babies and toddlers. Built for fast loading and mobile-first experience.
 
-## 🚀 Live Demo
-[View Live Website](https://yourusername.github.io/ecobaby-toys)
+## 🚀 Website Design
+<img src="screen.png" width="300" alt="Baby toy">
 
 ## 🛠 Tech Stack
 *   **Frontend:** HTML5, CSS3, JavaScript (ES6+)
