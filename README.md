@@ -1,6 +1,12 @@
-# 🍼 EcoPlay: Sustainable Joy for Tiny Humans
+# 🧸 EcoBaby Toys | Sustainable Toy Shop
 
-A sleek, lightweight **static storefront** for eco-friendly baby toys. This project focuses on a clean UI/UX to highlight sustainable materials and safe play.
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://yourusername.github.io/ecobaby-toys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A curated, static e-commerce website featuring sustainable, non-toxic, and eco-friendly toys for babies and toddlers. Built for fast loading and mobile-first experience.
+
+## 🚀 Live Demo
+[View Live Website](https://yourusername.github.io/ecobaby-toys)
 
 ## 🛠 Tech Stack
 *   **Frontend:** HTML5, CSS3, JavaScript (ES6+)
